@@ -36,7 +36,8 @@ a {
   font-size: 12px !important;
   line-height: 18px !important;
 }
-.font-16{
+
+.font-16 {
   font-size: 16px !important;
 }
 
@@ -87,6 +88,7 @@ a {
 .font-500 {
   font-weight: 500 !important;
 }
+
 .font-800 {
   font-weight: 800 !important;
 }
@@ -94,9 +96,11 @@ a {
 .text-black {
   color: #121212 !important;
 }
+
 .text-green {
   color: #21b573 !important;
 }
+
 .text-red {
   color: #fb6735 !important;
 }
@@ -212,6 +216,7 @@ p {
   color: #222222;
   text-align: center;
 }
+
 #mainNav {
   padding-bottom: 25px;
 }
@@ -238,7 +243,7 @@ p {
   }
 
 
- 
+
 }
 
 
@@ -251,7 +256,7 @@ p {
 
 /* achievement section */
 
-.achieve-card{
+.achieve-card {
   border: none;
   background-color: rgba(248, 255, 251, 1);
   padding: 30px;
@@ -259,14 +264,16 @@ p {
   border-radius: 10px;
 }
 
-.achieve-card:hover{
+.achieve-card:hover {
   background-color: #fff;
-  -webkit-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
-  -moz-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
-  box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);;
+  -webkit-box-shadow: 0px 22px 22px 10px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 22px 22px 10px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 22px 22px 10px rgba(0, 0, 0, 0.09);
+  ;
 }
-.achieve-img{
-height: 60px;
+
+.achieve-img {
+  height: 60px;
 }
 
 .achieve-card .card-body {
@@ -277,31 +284,90 @@ height: 60px;
 /* online courses start */
 
 
-.online-course-card{
+.online-course-card {
   border: none;
   padding: 15px;
   transition: all .3s ease;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
-  -moz-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
-  box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
+  -webkit-box-shadow: 0px 22px 22px 10px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 22px 22px 10px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 22px 22px 10px rgba(0, 0, 0, 0.09);
 }
 
-.online-course-img{
+.online-course-card:hover {
+  transform: translateY(-10px);
+}
+
+
+.online-course-img {
   height: 250px;
   object-fit: cover;
   border-radius: 15px;
 }
 
-button{
+button {
   width: max-content;
 }
-.date-seat-container p{
+
+.date-seat-container p {
   margin-bottom: 0;
 }
 
-.date-img, .seat-img{
+.date-img,
+.seat-img {
   height: 20px;
+}
+
+/* Testimonial section */
+
+.testimonial-img {
+  height: 130px;
+  transition: border .3s ease;
+}
+
+/* Testimonial section */
+
+.footer {
+  background-color: #282531;
+  color: #fff;
+}
+
+.footer-links-container li {
+  list-style: none;
+}
+
+.footer-links-container a {
+  text-decoration: none;
+  color: #fff;
+  transition: color .3s ease;
+}
+
+.footer-links-container a:hover {
+  color: #21b573;
+}
+
+/* Animation */
+
+.floating {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+  0% {
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
+  }
+
+  50% {
+    -webkit-transform: translatey(-20px);
+    transform: translatey(-20px);
+  }
+
+  100% {
+    -webkit-transform: translatey(0px);
+    transform: translatey(0px);
+  }
 }
 
 /*-------- Responsive styles ------*/
@@ -319,34 +385,44 @@ button{
     height: 100vh;
   }
 
-  .font-16{
+  .font-16 {
     font-size: 15px !important;
   }
-  
+
   .font-21 {
     font-size: 18px !important;
   }
-  
+
   .font-24 {
     font-size: 21px !important;
   }
-  
+
   .font-36 {
     font-size: 32px !important;
   }
-  
+
   .font-32 {
     font-size: 28px !important;
   }
-  
+
   .font-40 {
     font-size: 36px !important;
     line-height: 38px !important;
   }
-  
+
   .font-50 {
     font-size: 38px !important;
     line-height: 40px !important;
   }
+  .footer{
+    text-align: center;
+  }
 
+  .banner{
+    text-align: center;
+  }
+  .testimonial, .banner-details, .footer-details{
+    text-align: justify;
+  }
+  
 }
