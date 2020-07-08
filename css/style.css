@@ -87,9 +87,18 @@ a {
 .font-500 {
   font-weight: 500 !important;
 }
+.font-800 {
+  font-weight: 800 !important;
+}
 
 .text-black {
   color: #121212 !important;
+}
+.text-green {
+  color: #21b573 !important;
+}
+.text-red {
+  color: #fb6735 !important;
 }
 
 .text-white {
@@ -120,12 +129,10 @@ p {
   margin-top: 50px;
 }
 
-.text-yel {
-  color: #ffb527;
-}
 
-.bg-gradiant {
-  color: linear-gradient(to right, #ffb527, #ffd019);
+
+.bg-green {
+  background-color: rgba(240, 255, 240, 1);
 }
 
 @media (max-width: 767px) {
@@ -134,18 +141,18 @@ p {
   }
 }
 
-.btn-black {
+.btn-green {
   color: #fff;
-  background-color: #121212;
+  background-color: #21b573;
   transition: color .3s ease;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 7px 25px;
+  border-radius: 20px;
 }
 
-.btn-black:hover {
-  color: #121212;
+.btn-green:hover {
+  color: #21b573;
   background-color: #ffff;
-  border: 1px solid #121212;
+  border: 1px solid #21b573;
 }
 
 
@@ -161,7 +168,7 @@ p {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background: #ffb527 !important;
+  background: #21b573 !important;
 
 }
 
@@ -197,7 +204,7 @@ p {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffb527;
+  color: #21b573;
 }
 
 
@@ -207,7 +214,6 @@ p {
 }
 #mainNav {
   padding-bottom: 25px;
-  background: #fff !important;
 }
 
 
@@ -215,9 +221,7 @@ p {
 @media (min-width: 992px) {
   #mainNav {
     padding-bottom: 25px;
-    background: #fff !important;
     transition: all .3s ease;
-    transform: translate3d()
   }
 
   #mainNav .navbar-brand {
@@ -244,95 +248,39 @@ p {
   height: 80vh;
 }
 
-.carousel-fade .carousel-inner .carousel-item {
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-}
 
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
+/* achievement section */
 
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-
-.carousel-indicators {
-  bottom: -40px;
-}
-
-.carousel-indicators li {
-  background-color: #cecece;
-  width: 15px;
-  height: 10px;
-  border-radius: 5px;
-  transition: width .3s linear;
-}
-
-
-.carousel-indicators li.active {
-  background-image: linear-gradient(to right, #ffb527, #ffd019);
-  width: 40px;
-  height: 10px;
-  border-radius: 5px;
-}
-
-
-/* Smartphone section */
-
-.product-card {
+.achieve-card{
   border: none;
-  border-radius: 15px;
+  background-color: rgba(248, 255, 251, 1);
   padding: 30px;
-  -webkit-box-shadow: 4px 9px 19px 2px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 4px 9px 19px 2px rgba(0, 0, 0, 0.08);
-  box-shadow: 4px 9px 19px 2px rgba(0, 0, 0, 0.08);
-}
-
-
-/* Category section */
-.title-design{
-  height: 10px;
-  width: 125px;
-  background-image: linear-gradient(to right, #ffb527, #ffd019);
+  transition: all .3s ease;
   border-radius: 10px;
 }
 
-.category-card{
-  border: none;
-  -webkit-box-shadow: 4px 9px 19px 2px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 4px 9px 19px 2px rgba(0, 0, 0, 0.08);
-  box-shadow: 4px 9px 19px 2px rgba(0, 0, 0, 0.08);
-  padding: 30px;
+.achieve-card:hover{
+  background-color: #fff;
+  -webkit-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
+  -moz-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
+  box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);;
+}
+.achieve-img{
+height: 60px;
 }
 
-.border-radius-for-left{
-border-bottom-left-radius: 15px;
-border-top-right-radius: 15px;
+.achieve-card .card-body {
+  padding: 0;
 }
 
-.border-radius-for-right{
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  }
+
 /*-------- Responsive styles ------*/
+
+
 @media (max-width: 991px) {
   .banner {
     margin-top: 100px;
+    height: 100vh;
   }
 }
 
@@ -363,10 +311,12 @@ border-top-right-radius: 15px;
   
   .font-40 {
     font-size: 36px !important;
+    line-height: 38px !important;
   }
   
   .font-50 {
     font-size: 38px !important;
+    line-height: 40px !important;
   }
 
 }
