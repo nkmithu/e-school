@@ -115,7 +115,7 @@ a {
 
 p {
   font-size: 16px !important;
-  letter-spacing: 1.5px;
+  letter-spacing: .5px;
   font-family: 'Poppins', sans-serif;
   line-height: 23px !important;
 }
@@ -273,6 +273,36 @@ height: 60px;
   padding: 0;
 }
 
+
+/* online courses start */
+
+
+.online-course-card{
+  border: none;
+  padding: 15px;
+  transition: all .3s ease;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
+  -moz-box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
+  box-shadow: 0px 22px 22px 10px rgba(0,0,0,0.09);
+}
+
+.online-course-img{
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+button{
+  width: max-content;
+}
+.date-seat-container p{
+  margin-bottom: 0;
+}
+
+.date-img, .seat-img{
+  height: 20px;
+}
 
 /*-------- Responsive styles ------*/
 
