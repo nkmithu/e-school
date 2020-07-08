@@ -334,6 +334,7 @@ button {
 
 .footer-links-container li {
   list-style: none;
+  margin-bottom: 10px;
 }
 
 .footer-links-container a {
